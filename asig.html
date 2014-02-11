@@ -71,34 +71,55 @@
 				
 			<tr>
 				<td>Caracteristici
-				<ol>
-					<li>
-					Marca:
-					<input list="marca" name="browser">
-					<datalist id="marca">
-					  <option value="VW">
-					  <option value="Audi">
-					  <option value="Bmw">
-					  <option value="Dacia">
-					  <option value="Opel">
-					</datalist>
+				<br>
+					<table border="1">
+					<tr>
+					<td>
 					
-					</li>
-					<li>
-					Model
-					<input type="text" name="Model">
-					</li>
-					<li>
-					Capac. cil.
-					<input type="text" name="cmc">
-					</li>
+					<ol type="a">
+						<li>Marca</li>
+						<li>Model</li>
+						<li>Cmc</li>
+					
+					</ol>
+					</td>
+					<td>
+						<ol type="I">
+							<li>
+								<input list="marca" name="browser">
+									<datalist id="marca" >
+									  <option value="VW">
+									  <option value="Audi">
+									  <option value="Bmw">
+									  <option value="Dacia">
+									  <option value="Opel">
+									</datalist>
+							</li>
+							<li>
+							<input type="text" name="Model">
+							</li>
+							<li>
+							<input type="text" name="cmc">
+							</li>
+						</ol>
+					</td>
+					</tr>
+					</table>
 				
-				</ol>
 				</td>
 				<td colspan="2">
 					<img src="sigla2.gif" alt="Sigla" height="150" width="250">
-					<input type="submit" value="Verifica" width="150">
+					
 				</td>
+			</tr>
+			<tr>
+				<td>Mod plata:</td>
+				<td><input type="checkbox" name="cash">Cash</td>
+				<td><input type="checkbox" name="Card">Card</td>
+				
+			</tr>
+			<tr align="right" >
+				<td colspan="3"><input type="submit" value="Verifica" width="150"></td>
 			</tr>
 		</table>
 		
