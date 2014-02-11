@@ -18,20 +18,89 @@
 					<input type="text" name="FirstName">
 				</td>
 				
-				<td rowspan="4">Tip persoana: <br>
-					<input type="radio" name="fizica" value=true>
-					Fizica <br>
-					<input type="radio" name="fizica">
-					Pensionar <br>
-					<input type="radio" name="fizica">
-					Juridica<br> 
+				<td rowspan="4">
+				 <dl>
+					<dt>
+					Tip persoana: <br>
+						<dd>
+						<input type="radio" name="tippersoana" value="fizica">
+						Fizica <br>
+						</dd>
+						<dd>
+						<input type="radio" name="tippersoana" value="pensionar">
+						Pensionar <br>
+						</dd>
+						<dd>
+						<input type="radio" name="tippersoana" value="juridica">
+						Juridica<br>
+						</dd>						
+					</dt>
+				 </dl>
 				</td>
 			</tr>
 			<tr>
 				<td colspan="2">CNP:
 					<input type="text" name="cnp" maxlength="13" >
+					Tip:
+					<select>
+						<option value="Autoturism">Autoturism</option>
+						<option value="Autoutilitara">Autoutilitara</option>
+						<option value="Remorca">Remorca</option>
+						
+					</select>
+
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center" bgcolor="#0000F0"> <p>Perioada asigurata </p>
+				</td>
+			</tr>
+			<tr bgcolor="magenta">
+				<td>Din data 
+				<input type="date" name="first">
+				</td>
+				<td>pana la
+				<input type="date" name="last">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="center" bgcolor="orange" height="50">
+				<b>Date autovehicul</b>
+				</td>
+			</tr>
+				
+			<tr>
+				<td>Caracteristici
+				<ol>
+					<li>
+					Marca:
+					<input list="marca" name="browser">
+					<datalist id="marca">
+					  <option value="VW">
+					  <option value="Audi">
+					  <option value="Bmw">
+					  <option value="Dacia">
+					  <option value="Opel">
+					</datalist>
+					
+					</li>
+					<li>
+					Model
+					<input type="text" name="Model">
+					</li>
+					<li>
+					Capac. cil.
+					<input type="text" name="cmc">
+					</li>
+				
+				</ol>
+				</td>
+				<td colspan="2">
+					<img src="sigla2.gif" alt="Sigla" height="150" width="250">
+					<input type="submit" value="Verifica" width="150">
 				</td>
 			</tr>
 		</table>
+		
 	</body>
 </html>
